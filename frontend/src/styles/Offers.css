@@ -1,0 +1,135 @@
+/* General layout */
+.offers-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Full-width banner with dynamic height */
+.banner {
+  width: 100%;
+  height: 100vh; /* Set to 100% of the viewport height for a fullscreen banner */
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Contain will show the entire image without cropping */
+  object-position: center; /* Center the image if there's empty space */
+}
+
+/* Offers content box */
+.offers-content {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Aligning all text to the left */
+}
+
+/* Typography */
+.offer-title {
+  font-size: 32px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: left; /* Ensuring title is left-aligned */
+}
+
+.section-heading {
+  font-size: 22px;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left; /* Left-aligning section headings */
+}
+
+.section-content {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  text-align: left; /* Left-aligning content */
+}
+
+/* Policies table */
+.policies {
+  margin-bottom: 40px;
+}
+
+.policy-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd; /* Adds a separator line */
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.policy-item h3 {
+  width: 40%; /* Left-align heading */
+  font-size: 18px;
+  color: #2980b9;
+}
+
+.policy-item p {
+  width: 55%; /* Right-align text */
+  margin-left: 5%;
+}
+
+/* Price Section */
+.price-section {
+  margin: 40px 0;
+}
+
+.price-amount {
+  font-size: 28px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Contact Section */
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 16px;
+}
+
+.contact-info a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .offers-container {
+    padding: 10px;
+  }
+
+  .banner {
+    height: 250px; /* Adjust banner height for mobile */
+  }
+
+  .policy-item {
+    flex-direction: column;
+  }
+
+  .policy-item h3, .policy-item p {
+    width: 100%;
+    text-align: left;
+  }
+}
